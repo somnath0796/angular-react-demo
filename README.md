@@ -1,8 +1,24 @@
-## Welcome to GitHub Pages
+### Welcome to Angular and React Tutorial
+--edited 7th March 2019.
 
-You can use the [editor on GitHub](https://github.com/somnath0796/angular-react-demo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**Pre-Requisites**
+- JavaScript
+- HTML 5
+- CSS 3
+- TypeScript
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Objective**
+
+To understand how UI based frameworks operate in modern applications in the purview of HTML5 and CSS3 features. Web Based UI frameworks are dominated by but not limited to Angular and React. To base our expectations, we should be understanding HTML, CSS and JavaScript. Of course the technologies are constantly evolving, we would like to keep it as updated to the time of writing this. We have based our scope to Angular 5 and JavaScript ES2015 (**ES5**) only.
+
+
+## Setup
+Setup your repository:
+
+```git clone https://github.com/somnath0796/angular-react-demo.git```
+
+_We have HTML Material, Angular Material and React Material Directories_
+angDand is a demo angular project aimed at understanding various fetaures of Angular. this is with respect ot Angular 5.
 
 ### Markdown
 
@@ -32,6 +48,4 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/somnath0796/angular-react-demo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
