@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Simple example of CSS3 Properties" keywords="HTML5,Stucture, CSS3"/>
+<title>CSS3 Example</title>
+<style>
+div
+{
+  /*the second parameter indicates a value to start the counter from
+  the counter starts from one unit more than the second parameter. The default is 0
+  */
+  
+  /*counter-reset:section 1; */
+
+  counter-reset:section;
+
+}
+h3:before
+{
+   /*counter-increment can also contain a step value as a second parameter*/
+   
+   /* counter-increment:section 2; */
+  
+
+   counter-increment:section;
+
+   /*counter accepts a second parameter that indicates the type of counter
+   possible values include upper-alpha,lower-alpha,decimal,upper-roman,lower-roman
+  */
+   
+   /* content:counter(section,upper-roman); */
+
+   content:counter(section);
+
+
+
+
+
+}
+</style>
+</head>
+<body>
+<div style="background-color:aqua">
+<h3>. Section </h3>
+<p>This is from the first section of my document!</p>
+<h3>. Section </h3>
+<p>This is from the second section of my document!</p>
+</div>
+<div style="background-color:grey">
+<h3>. Section </h3>
+<p>This is from the first section of my document!</p>
+<h3>. Section </h3>
+<p>This is from the second section of my document!</p>
+</div>
+</body>
+</html>

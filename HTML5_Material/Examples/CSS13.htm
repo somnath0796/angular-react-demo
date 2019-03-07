@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Simple example of CSS3 Properties" keywords="HTML5,Stucture, CSS3"/>
+<title>CSS3 Example</title>
+<style>
+p#myPara:after
+{
+   content:"generated content";
+}
+div#newGen:before
+{
+   content:open-quote;
+}
+div#newGen:after
+{
+   content:close-quote;
+}
+div:after
+{
+
+   content:url(bottle.jpeg);
+}
+</style>
+</head>
+<body>
+<br/><br/>
+<div>This div element has content added after </div>
+<div id="newGen">This div element content is enclosed in quotes</div>
+<p id="myPara" style="color:#00ff00">This sentence contains </p>
+</body>
+</html>

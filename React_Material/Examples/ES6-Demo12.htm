@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>ES 2015 Demo</title>
+	<script>
+	   var lines = "Do not give up!";
+	   var html1 = `<div>
+	   Do not bow down!
+	   </div>`;
+	   var html2 = `<div>
+	   ${lines} Do not bow down!
+	   </div>`;
+	   function init(){
+		   	   document.getElementById('div1').innerHTML = html1;
+	   }
+	   function init1(){
+		   document.getElementById('div1').innerHTML += html2;
+	   }
+
+	</script>
+</head>
+<body>
+	<h1>ES 6 Demo</h1>
+	<form>
+	<input type="button" name="btn1" value="Back Ticks" onclick="init()" />
+	<input type="button" name="btn1" value="Back Ticks with interpolation" onclick="init1()" />
+	</form>
+	<div id="div1">
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>ES 2015 Demo</title>
+	<script>
+	  class Animal{
+	     constructor(name){
+			 this.name = name;
+	     }
+		 speak(){
+			 alert(this.name + ' makes a noise.');
+		 }
+	  }
+	  class Dog extends Animal {
+		  speak() {
+			  super.speak();
+			  alert(this.name + ' barks.');
+		  }
+	  }
+	  
+	  function createObject(){
+		  var myDog = new Dog('Greg');
+		  myDog.speak();
+	  }
+	  
+	</script>
+</head>
+<body>
+	<h1>ES 6 Demo</h1>
+	<form action="">
+	<input type="button" name="btn1" value="Create Object" onclick="createObject()"/>
+	</form>
+</body>
+</html>

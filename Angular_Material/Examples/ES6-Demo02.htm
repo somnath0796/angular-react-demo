@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>ES 2015 Demo</title>
+	<script>
+	  class Shape{
+		  constructor(type){
+			  this.type=type;
+		  }
+		  getType(){
+			  return(this.type);
+		  }
+		  static getClassName(){
+			  var name = "Shape";
+			  return name;
+		  }
+	  }
+	  function createObject(){
+	  		var circle = new Shape("Circle");
+	  		alert(circle.getType());
+			alert(Shape.getClassName());
+  	  }
+	</script>
+</head>
+<body>
+	<h1>ES 6 Demo</h1>
+	<form action="">
+	<input type="button" name="btn1" value="Create Object" onclick="createObject()"/>
+	</form>
+</body>
+</html>

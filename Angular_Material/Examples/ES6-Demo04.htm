@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>ES 2015 Demo</title>
+	<script>
+	  var shape = {
+		  name: 'Cube',
+		  say: function(){
+			  alert('This is say(): ' + this.name);
+			  setTimeout(function(){
+				  alert('Inside setTimeout(): ' + this.name);
+			  }, 2000);
+		  }
+	  }
+	  function createObject(){
+		  shape.say();
+	  }
+	  
+	</script>
+</head>
+<body>
+	<h1>ES 6 Demo</h1>
+	<form action="">
+	<input type="button" name="btn1" value="Create Object" onclick="createObject()"/>
+	</form>
+</body>
+</html>

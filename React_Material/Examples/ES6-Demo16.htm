@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>DeStructuring</title>
+	<script>
+	   function deStructure(){
+		  let myData = ['Alpha', 'Beta', 'Charlie'];
+		  [a,,b] = myData;
+		  alert(a + ", " + b);
+	   }
+	</script>
+</head>
+<body>
+	<h2>DeStructure Demo</h2>
+	<form>
+	   <input type='button' name='btn1' value='DeStructure' onclick='deStructure()'/>
+	</form>
+</body>
+</html>

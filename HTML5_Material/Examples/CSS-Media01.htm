@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Simple example of HTML5 structure" keywords="HTML5,Stucture"/>
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>HTML Page Structure</title>
+<link rel="Stylesheet" type="text/css" href="defStyle.css"/>
+<link rel="Stylesheet" type="text/css" href="Media-queries.css"/>
+
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div id="pagewrap">
+
+	<header id="header">
+
+		<hgroup>
+			<h1 id="site-logo">Demo</h1>
+			<h2 id="site-description">Site Description</h2>
+		</hgroup>
+
+		<nav>
+			<ul id="main-nav" class="clearfix">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Breaking News</a></li>
+				<li><a href="#">Time Capsules</a></li>
+				<li><a href="#">Historicals</a></li>	
+			</ul>
+		</nav>
+
+		<form id="searchform">
+			<input type="text" placeholder="search" id="sch">
+		</form>
+
+	</header>
+	
+	<div id="content">
+
+		<article class="post">
+			<header>
+				<h1 class="post-title"><a href="#">Jurong Bird Park</a></h1>
+				<p class="post-meta"><time class="post-date" datetime="2012-03-08" >March 8, 2012</time> <em>in</em> <a href="#">Nature</a></p>
+			</header>
+			<figure class="post-image"> 
+				<img src="Jurong.jpg" /> 
+			</figure>
+			<p>Opened in 1971, Jurong Bird Park is the largest bird park in the world, offering a 20.2-hectare hillside haven for 5,000 birds representing 380 species. Its Heliconia Repository, with 108 heliconia species and cultivars in its collection, is one of the largest in the region. With key attractions such as the Bird Discovery Centre, African Waterfall Aviary, Lory Loft Aviary, Southeast Asian Birds Aviary and Penguin Coast, the Bird Park attracted close to 900,000 visitors in 2010.
+Committed towards conservation, the Bird Park is the first in the world to breed the Twelve-wired Bird of Paradise in captivity and received the Breeders’ Award from the American Pheasant and Waterfowl Society in 2001. In 2006 and 2007, the Bird Park became the recipient of the Conservation & Research Award for the Oriental Pied Hornbill Conservation Project by IV International Symposium on Breeding Birds in Captivity (ISBBC). In Asia, Jurong Bird Park is the only park in the Asia Pacific to have an Avian Hospital. It has a Breeding and Research Centre tasked to ensure the welfare, breeding and promulgation of birdlife and is also an Official Rescue Avian Centre.</p>
+
+		</article>
+
+	</div>
+	
+	<aside id="sidebar">
+
+		<section class="widget">
+			 <h4 class="widgettitle">Sidebar</h4>
+			<ul>
+				<li><a href="#">WordPress</a> (1)</li>
+				<li><a href="#">Nature</a> (23)</li>
+				<li><a href="#">Travel Trails </a>(10)</li>
+			</ul>
+		</section>
+						
+	</aside>
+
+	<footer id="footer">
+		<p>Example compiled by <a href="mailto:lakshman.mn@gmail.com">Lakshman M N</a></p>
+	</footer>
+	
+</div>
+</body>
+</html>

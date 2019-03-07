@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Simple example of CSS3 Properties" keywords="HTML5,Stucture, CSS3"/>
+<title>CSS3 Example</title>
+<style>
+.class1
+{
+background-color:yellow;
+border:20px;
+border-style:solid;
+border-color:#00ff00;
+box-sizing:content-box;
+-moz-box-sizing:content-box; /* Firefox */
+-webkit-box-sizing:content-box; /* Safari */
+width:250px;
+height:150px;
+font-family:Calibri;
+}
+div
+{
+background-color:aqua;
+border:20px;
+border-style:solid;
+border-color:#ff0000;
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+width:250px;
+height:150px;
+font-family:Calibri;
+}
+</style>
+</head>
+<body>
+<div class="class1"><b>CSS3 box sizing - content box</b><br/>
+In content box, the browser adds the left and right borders to the width and renders an element with a larger width than specified. <br/> Width is 250px + 5px + 5px = 260px
+</div>
+<div><b>CSS3 box sizing - border box</b><br/>
+In border box, the browser forces the left and right borders within the specified width and renders the element. <br/> 
+Width is 250px
+</div>
+</body>
+</html>

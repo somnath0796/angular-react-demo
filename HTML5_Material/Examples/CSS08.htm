@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Simple example of CSS3 Properties" keywords="HTML5,Stucture, CSS3"/>
+<title>CSS3 Example</title>
+<style>
+ #hello {
+		opacity: 0.4;
+		height: 20px;
+		background: #fffaaa;
+		display: inline-block;
+		border: 1px dashed #000;
+		padding: 10px;
+
+		/* Firefox */
+		-moz-transition-property: opacity;
+		-moz-transition-duration: 2s;
+		-moz-transition-timing-function: ease;
+		-moz-transition-delay: 1s;
+
+		-moz-transition-property: height;
+		-moz-transition-duration: 1s;
+		-moz-transition-timing-function: ease-in;
+		-moz-transition-delay: 1s;
+
+		/* WebKit */
+		-webkit-transition-property: opacity;
+		-webkit-transition-duration: 2s;
+		-webkit-transition-timing-function: ease;
+		-webkit-transition-delay: 1s;
+
+		-webkit-transition-property: height;
+		-webkit-transition-duration: 1s;
+		-webkit-transition-timing-function: ease-in;
+		-webkit-transition-delay: 1s;
+
+		/* Opera */
+		-o-transition-property: opacity;
+		-o-transition-duration: 2s;
+		-o-transition-timing-function: ease;
+		-o-transition-delay: 1s;
+
+		-o-transition-property: height;
+		-o-transition-duration: 1s;
+		-o-transition-timing-function: ease-in;
+		-o-transition-delay: 1s;
+
+
+		/* Standard */
+		transition-property: opacity;
+		transition-duration: 2s;
+		transition-timing-function: ease;
+		transition-delay: 1s;
+
+		transition-property: height;
+		transition-duration: 1s;
+		transition-timing-function: ease-in;
+		transition-delay: 1s;
+
+	}
+
+#hello:hover {
+		opacity: 1;
+		height: 40px;
+
+/* Uncomment the following for transform demo */	
+	
+
+		-moz-transform: scale(1.2) translate(25px) rotate(25deg);
+		-webkit-transform: scale(1.2) translate(25px) rotate(25deg);
+		-o-transform: scale(1.2) translate(25px) rotate(25deg);
+		transform: scale(1.2) translate(25px) rotate(25deg);
+
+
+	}
+</style>
+</head>
+<body>
+<p id="hello" >
+Hello CSS3 Transition World!
+</p>
+</body>
+</html>

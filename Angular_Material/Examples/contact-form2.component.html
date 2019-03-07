@@ -1,0 +1,30 @@
+<form #form="ngForm">
+	<div class="form-group">
+        <label for="firstName">First Name</label>
+        <input ngModel id="firstName" type="text" class="form-control" name="firstName" required>
+        <div *ngIf="!form.controls.firstName?.valid && form.controls.firstName?.touched" class="alert alert-danger">
+            First Name is required
+        </div>	
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input ngModel id="lastName" type="text" class="form-control" name="lastName" required>
+        <div *ngIf="!form.controls.lastName?.valid && form.controls.lastName?.touched" class="alert alert-danger">
+            Last Name is required
+        </div>	
+    </div>
+    <fieldset class="form-group" ngModelGroup="address">
+        <legend>Address</legend>
+        <div>
+            <label for="street">Street</label>
+            <input type="text" ngModel name="street" id="street" class="form-control"/>
+        </div>
+        <div>
+            <label for="zipCode">Zip Code</label>
+            <input type="text" ngModel name="zipCode" id="zipCode" class="form-control"/>
+        </div>
+    </fieldset>
+    <button class="btn btn-primary" type="button" [disabled]="!form.valid" (click)="log(form)">Submit</button>
+    <hr />
+    <pre>{{ form.value | json }}</pre>
+</form>
