@@ -3,8 +3,7 @@
 
 Unlike Angular which is framework, ReactJs is a library which can be used to create View Layer of a MVC archtecture. It primarily allows Model-View-View-Whatever pattern where it generally enhances the User Experience. It is coded in ES6 and Typescript with limited support. We are going to follow ES6 for our convenience.
 
-
-
+Declarative approach of Programming. Has Uni-directional Data Binding which makes the code more predictable and simplifies debugging. Leverages the latest JavaScript fetaures.
 
 
 ## Creation of Components
@@ -12,12 +11,12 @@ Unlike Angular which is framework, ReactJs is a library which can be used to cre
 **Two Ways:**
 
 - Functional Components (Stateless/Presentational)
-
- -- refer user.js
+  _refer user.js_
 
 - Class-based Components (Stateful/container)
     extends from React.Component
- -- refer userClass.js 
+
+  _refer userClass.js_
 
  ## Components Props
 
@@ -272,7 +271,44 @@ axios also helps in POST.
 
 ## Testing in React
 
+Can use the tools 
+- Jest
+  - Bundled with react; so no need to install separately.
+  - developed by FB for component testing; is not just a library but also a test runner.
 
+- Enzyme
+  - Made by Airbnb for component tests
+  - render components, specify the states they are in, and then help simulate events. 
+  - Supports different versions of React.
+
+- Storybook
+  - render components in different states.
+  - ensures whether they behave correctly.
+
+
+``` npm test ```
+
+
+## Build and Deployment
+
+To Build
+``` npm run build ```
+
+- Create the build directory with a production build of the application.
+- copy all the files in this directory.'
+- The HTTP server can be setup such that clients are served index.htm.
+- Delete the following files to disable debugging:
+```
+  -  build/static/js/xyz.js.map
+  -  build/static/js/xyz.css.map
+```
+
+## Resources
+
+**Awesome React** : https://github.com/enaqx/awesome-react
+**React Components** : https://github.com/brillout/awesome-react-components
+
+#####################################################################################################
 
 # REDUX
 
