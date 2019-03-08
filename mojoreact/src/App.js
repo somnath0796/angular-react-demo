@@ -2,9 +2,20 @@ import React, { Component } from 'react';
 import User from './user';
 import UserContainer from './userClass';
 import './App.css';
-import userContainer from './userClass';
+import Avenger from './avenger'
 
 class App extends Component {
+
+  state = {
+    Avengers : [
+      {id :2010, name: 'Thor', power: 'Lightning/Mjolnir'},
+      {id :2008, name: 'IronMan', power: 'Technology/Suit'},
+      {id :2011, name: 'Captain America', power: 'Strength/Shield'},
+      {id :2009, name: 'Hulk', power: 'Strength/Smash'},
+      
+    ]
+  }
+
   render() {
     //render example here className is used which is a jsx attribute as class is reserved in ES5 JS
     /**
@@ -38,6 +49,7 @@ class App extends Component {
        * However if-else can be used inside IFFE.
        * This is also permissible within expression.
        */
+      /** 
       <div className='App'>
       <User></User>
       <UserContainer></UserContainer>
@@ -52,6 +64,15 @@ class App extends Component {
           </select>
         </form>
       </div>
+      */
+     <div className='App'>
+        {this.state.Avengers.map(avenger => {
+          return(<Avenger name={avenger.name} 
+            power={avenger.power} key={avenger.id}></Avenger>)
+        })
+      }
+     </div>
+      
     );
   }
 }

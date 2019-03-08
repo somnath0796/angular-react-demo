@@ -9,7 +9,7 @@
 
 ## Creation of Components
 
-** Two Ways: **
+**Two Ways:**
 
 - Functional Components (Stateless/Presentational)
 
@@ -101,3 +101,34 @@ React creates a SyntheticEvent for each event contains the details for the event
  - the nativeEvent is an attribute of SyntheticEvent which gives access to actual browser event.
 
  This is demonstated by e in userClass.js.
+
+ ## Dynamic Instances of Components
+
+ Refer ``` avenger.js ``` for the component description. We will be passing the state in the App.js
+ Note every state object will have a **unique id** so as to React can differentiate them uniquely.
+
+ Here's the App.js implementation: 
+
+ ```
+  state = {
+    Avengers : [
+      {id :2010, name: 'Thor', power: 'Lightning/Mjolnir'},
+      {id :2008, name: 'IronMan', power: 'Technology/Suit'},
+      {id :2011, name: 'Captain America', power: 'Strength/Shield'},
+      {id :2009, name: 'Hulk', power: 'Strength/Smash'},
+      
+    ]
+  }
+ render(){
+     return (
+        <div className='App'>
+        {this.state.Avengers.map(avenger => {
+          return(<Avenger name={avenger.name} 
+            power={avenger.power} key={avenger.id}></Avenger>)
+            })
+        }
+        </div>
+     )
+ }
+ 
+ ```
