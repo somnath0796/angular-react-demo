@@ -2,6 +2,10 @@ import React from 'react';
 
 import { NavLink } from 'react-router-dom';
 
+/**
+ * NavLink is a Component
+ * to is a prop
+ */
 const NavBar = () => {
     return(
     <nav>

@@ -11,6 +11,7 @@ class avenger extends React.Component {
             border : '2px solid red',
             borderRadius : '4px',
             anchormarginLeft : '15px',
+            anchormarginBottom : '5px',
             padding  : '12px' 
         }
 

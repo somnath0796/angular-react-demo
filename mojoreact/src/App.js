@@ -3,6 +3,8 @@ import User from './user';
 import UserContainer from './userClass';
 import './App.css';
 import Avenger from './avenger'
+import Clock from './Clock';
+import Post from './Post'
 
 class App extends Component {
 
@@ -14,6 +16,21 @@ class App extends Component {
       {id :2009, name: 'Hulk', power: 'Strength/Smash'},
       
     ]
+  }
+  /**
+   * submitHandler = (e) => {
+    e.preventDefault();
+    alert(this.refs.txtFname.value);
+  }
+   */
+  changeHandler = (e) => {
+    e.preventDefault();
+    this.setState({
+      Avengers : [
+        ...
+        {id :2010, name: 'myAvenger', power: 'Lightning/Mjolnir'},
+      ]
+  })
   }
 
   render() {
@@ -63,6 +80,12 @@ class App extends Component {
             {(currCity === 'Calcutta') ? null : <option>Hyderabad</option>}
           </select>
         </form>
+        //controlled forms
+        <form onSubmit={this.submitHandler}>
+        <input type='text' name='txtFname' value={this.state.Avengers[0].name} onChange={this.changeHandler}/>
+        <br/>
+        <input type='Submit' value='Submit' />
+      </form>
       </div>
       */
      <div className='App'>
@@ -71,6 +94,11 @@ class App extends Component {
             power={avenger.power} key={avenger.id}></Avenger>)
         })
       }
+      <br/>
+      
+      
+      <Clock></Clock>
+      <Post></Post>
      </div>
       
     );
