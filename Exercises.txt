@@ -1,0 +1,15 @@
+REACT
+Create a Video Player component in React It accepts the source as Prop.
+
+Create a weather forecast React App that shows forecast for next 5 days.
+Accept the details high low temp with chance of rain and humidity with appropriate graphic.
+
+
+angular
+Create custom pipes for the folowing
+ - Convert Kgs to Pounds
+ - Detect the type of the credit card based on the number
+  Hint: 
+if 15 digit number and starts with 3 its AmericanExpress
+if 16 digit number and starts with 4 its Visa
+if 16 digit number and starts with 5 its MasterCard
