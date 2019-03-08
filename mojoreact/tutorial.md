@@ -1,7 +1,7 @@
-### REACTJS
+# REACT JS Library
 - author : mThanos
 
-
+Unlike Angular which is framework, ReactJs is a library which can be used to create View Layer of a MVC archtecture. It primarily allows Model-View-View-Whatever pattern where it generally enhances the User Experience. It is coded in ES6 and Typescript with limited support. We are going to follow ES6 for our convenience.
 
 
 
@@ -159,7 +159,7 @@ React creates a SyntheticEvent for each event contains the details for the event
  - Bootstrap CDN
  - Can be include as js files bootstrap.js, jquery.js, popper.js
  - React bootstrap package where bootstrap component is rebuilt as React Component.(popular)
-  A package library called reactstrap needs to be installed for this.
+  A package library called _reactstrap_ needs to be installed for this.
 
     ``` npm install --save bootstrap ```
     ``` npm install --save reactstrap ```
@@ -246,7 +246,7 @@ Need to install this package.
         </Router>), document.getElementById('root'));
 ```
 
-Refer React_Materials/Examples/[Navbar.js][Home.js][Outlet.js]
+Refer _ReactMaterials/Examples/[Navbar.js][Home.js][Outlet.js]_
 
 ## React Data requests
 
@@ -274,5 +274,5 @@ axios also helps in POST.
 
 
 
-### REDUX
+# REDUX
 
