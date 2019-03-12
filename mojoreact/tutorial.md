@@ -305,10 +305,10 @@ To Build
 
 ## Resources
 
-**Awesome React** : https://github.com/enaqx/awesome-react
-**React Components** : https://github.com/brillout/awesome-react-components
+- **Awesome React** : https://github.com/enaqx/awesome-react
+- **React Components** : https://github.com/brillout/awesome-react-components
 
-#####################################################################################################
+#############################################################################################
 
 # REDUX
 
